@@ -2,7 +2,7 @@ FROM node:22.17.1
 
 EXPOSE 80
 
-WORKDIR /app
+WORKDIR /app/20250731-express-student
 
 COPY package*.json ./
 
@@ -12,4 +12,3 @@ COPY . .
 
 ENTRYPOINT ["npm","run"]
 CMD ["start"]
-
