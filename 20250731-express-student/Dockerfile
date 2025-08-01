@@ -2,7 +2,7 @@ FROM node:22.17.1
 
 EXPOSE 80
 
-WORKDIR /20250731-express-student
+WORKDIR /app
 
 COPY package*.json ./
 

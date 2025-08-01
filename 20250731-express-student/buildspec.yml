@@ -1,4 +1,4 @@
-version: 0.2
+git version: 0.2
 
 phases:
   pre_build:
@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       # Build the Docker image using the provided Dockerfile and tag it with "latest"
-      - docker build -t $ECR_REPO_NAME:latest .
+      - docker build -f 20250731-express-student/Dockerfile -t $ECR_REPO_NAME:latest ./20250731-express-student/
   post_build:
     commands:
       # Tag the Docker image with ECR repository URL for the Git tag
